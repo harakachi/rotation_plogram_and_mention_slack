@@ -1,10 +1,12 @@
+var columnA = 1
+var columnB = 2
+var columnC = 3
+var columnD = 4
+var columnE = 5
+  
 function input_data() {
   
-  var columnA = 1
-  var columnB = 2
-  var columnC = 3
-  var columnD = 4
-  var columnE = 5
+
   var name_list = get_random_name_()
   
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("スケジュール")

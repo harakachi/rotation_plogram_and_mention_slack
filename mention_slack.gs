@@ -1,3 +1,10 @@
+
+var columnA = 1
+var columnB = 2
+var columnC = 3
+var columnD = 4
+var columnE = 5
+
 var slack = {
   postUrl:   'https://slack.com/api/chat.postMessage',
   userName:  '給水当番連絡botさん',
@@ -50,8 +57,8 @@ function post2Slack(apply_data) {
 }
 
 function convert_slack_mention_name_(name) {
-  var row = findRow_(meibo_sheet, name, 1)
-  return meibo_sheet.getRange(row, 2).getValue()
+  var row = findRow_(meibo_sheet, name, columnA)
+  return meibo_sheet.getRange(row, columnB).getValue()
 }
 
 function findRow_(sheet,val,col){ 
