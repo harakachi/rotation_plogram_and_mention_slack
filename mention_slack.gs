@@ -32,7 +32,7 @@ function post2Slack(apply_data) {
   }
   
   if (slack_mention_name != "") {
-    var message = "本日の給水担当は <@"+slack_mention_name+"> さんです！ \n※担当者が初めて作業する場合は、チーム内でフォローをお願いします:gori2:\n\n";
+    var message = "本日の給水担当は <@"+slack_mention_name+"> さんです！ \n※担当者が初めて作業する場合は、チーム内でフォローをお願いします。また、担当者の急なお休みなどの対応もチーム内でお願いします:gori2:\n\n";
     if (remarks != "") {
       message += "\n備考: *"+remarks+"* \n\n";
     }
