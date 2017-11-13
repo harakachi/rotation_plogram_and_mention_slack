@@ -2,7 +2,6 @@ var columnA = 1
 var columnB = 2
 var columnC = 3
 var columnD = 4
-var columnE = 5
   
 function input_data() {
   
