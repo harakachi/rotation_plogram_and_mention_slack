@@ -42,7 +42,7 @@ function post2Slack(apply_data) {
       message += "\n備考: *"+remarks+"* \n\n";
     }
     message += "○やるべきこと\n・給水\n・排水タンクのお水を捨てる\n※加湿器は３台あります！！\n\n"
-    message += "○お手入れのPDF \n xxxxxxxxxx\n\n"
+    message += "○お手入れのPDF \n https://www.uruorich.jp/common/pdf/kantanguide2.pdf\n\n"
     message += "○当番表\n https://docs.google.com/a/mixi.co.jp/spreadsheets/d/1myWeofPmcIXNfTHADQwJm5vkE_Q59LHWu_Uu8nGFAFM/edit?usp=sharing\n\n"
     message += "\nよろしくお願い致します!!"
     
@@ -60,7 +60,7 @@ function convert_slack_mention_name_(name) {
 }
 
 function findRow_(sheet,val,col){ 
-  var data = sheet.getDataRange().getValues(); //受け取ったシートのデータを二次元配列に取得
+  var data = sheet.getDataRange().getValues();
   for(var i=1;i<data.length;i++){
     if(data[i][col-1] === val){
       return i+1;
