@@ -48,7 +48,7 @@ function post2Slack(apply_data) {
     
     
     var slackApp = SlackApp.create(getSlackToken_());
-    var channel_id = "G80E1EGQ3" //給水ちゃんねる
+    var channel_id = "G816LP8TC" //給水ちゃんねる
     slackApp.postMessage(channel_id,message,{ username: slack["userName"], icon_emoji: slack["iconEmoji"]});
   }
 }
