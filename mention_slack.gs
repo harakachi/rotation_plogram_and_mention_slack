@@ -5,8 +5,8 @@ var columnD = 4
 
 var slack = {
   postUrl:   'https://slack.com/api/chat.postMessage',
-  userName:  '給水当番連絡botさん',
-  iconEmoji: ':gori2:',
+  userName:  '給水当番れんらくbotさん',
+  iconEmoji: ':droplet:',
 }
 
 var meibo_sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("名簿")
@@ -48,8 +48,7 @@ function post2Slack(apply_data) {
     
     
     var slackApp = SlackApp.create(getSlackToken_());
-    // var channel_id = "G5BPZ9ZPS" //test1
-    var channel_id = "G5E1FNH8C" //test3
+    var channel_id = "G80E1EGQ3" //給水ちゃんねる
     slackApp.postMessage(channel_id,message,{ username: slack["userName"], icon_emoji: slack["iconEmoji"]});
   }
 }
